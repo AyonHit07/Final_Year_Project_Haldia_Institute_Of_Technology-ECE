@@ -1,16 +1,21 @@
 import { useState } from 'react'
 import './App.css'
-import AuthPage from './pages/AuthPage'
+
 import { Route, Routes } from 'react-router-dom'
+import {Toaster} from "react-hot-toast"
+import Signup from './pages/Signup'
+import Login from './pages/Login'
+import Home from './pages/Home'
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div>
       <Routes>
-        <Route path='/' element={<AuthPage />} />
+        <Route path='/' element={<Signup/>} />
+        <Route path='/login' element={<Login/>} />
+        <Route path='/home' element={<Home />} />
         {/* <Route path='/doctors' element={<Doctors />} />
         <Route path='/doctors/:speciality' element={<Doctors />} />
         <Route path='/login' element={<Login />} />
@@ -20,7 +25,8 @@ function App() {
         <Route path='/my-appointments' element={<MyAppointments />} />
         <Route path='/appointment/:docId' element={<Appointment />} /> */}
       </Routes>
-    </>
+      <Toaster/>
+    </div>
   )
 }
 
