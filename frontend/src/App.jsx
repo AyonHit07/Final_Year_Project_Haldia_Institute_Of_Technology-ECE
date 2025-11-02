@@ -6,16 +6,18 @@ import {Toaster} from "react-hot-toast"
 import Signup from './pages/Signup'
 import Login from './pages/Login'
 import Home from './pages/Home'
+import ChatBot from './components/ChatBot'
 
 
 function App() {
 
   return (
-    <div>
+    <div className='max-w-6xl max-h-96'>
       <Routes>
         <Route path='/' element={<Signup/>} />
         <Route path='/login' element={<Login/>} />
         <Route path='/home' element={<Home />} />
+        <Route path='/home/chatbot' element={<ChatBot />} />
         {/* <Route path='/doctors' element={<Doctors />} />
         <Route path='/doctors/:speciality' element={<Doctors />} />
         <Route path='/login' element={<Login />} />

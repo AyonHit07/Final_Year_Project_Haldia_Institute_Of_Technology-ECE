@@ -6,7 +6,7 @@ export default function Home() {
   const userName = "Ayon"; // You can replace this with dynamic data from context or props
 
   const aiServices = [
-    { name: "Chatbot Assistant", route: "/chatbot", emoji: "💬" },
+    { name: "Chatbot Assistant", route: "/home/chatbot", emoji: "💬" },
     { name: "Image Generator", route: "/image-generator", emoji: "🎨" },
     { name: "Text Summarizer", route: "/text-summarizer", emoji: "🧠" },
     { name: "Code Assistant", route: "/code-assistant", emoji: "💻" },
@@ -27,7 +27,7 @@ export default function Home() {
       </header>
 
       {/* Main Content */}
-      <main className="flex-grow p-6">
+      <main className="grow p-6">
         <h2 className="text-xl font-semibold mb-6">Explore Our AI Services</h2>
 
         {/* Grid Layout */}

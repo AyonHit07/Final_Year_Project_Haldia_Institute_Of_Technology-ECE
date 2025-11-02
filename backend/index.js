@@ -4,6 +4,7 @@ import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import authRoutes from "./src/routes/auth.routes.js";
+import aiServicesRoutes from "./src/routes/aiServices.routes.js"
 import { connectDB } from "./src/lib/db.js"
 
 dotenv.config();
@@ -24,6 +25,7 @@ app.use(
 
 // Routes
 app.use("/api/auth", authRoutes); // <-- missing '/' before 'api'
+app.use("/api/ai-services",aiServicesRoutes)
 
 // Start server
 server.listen(port, () => {
