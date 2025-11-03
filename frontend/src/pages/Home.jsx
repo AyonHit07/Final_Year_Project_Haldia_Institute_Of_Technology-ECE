@@ -8,7 +8,7 @@ export default function Home() {
   const aiServices = [
     { name: "Chatbot Assistant", route: "/home/chatbot", emoji: "💬" },
     { name: "Image Generator", route: "/image-generator", emoji: "🎨" },
-    { name: "Text Summarizer", route: "/text-summarizer", emoji: "🧠" },
+    { name: "Text Summarizer", route: "/home/text-summarizer", emoji: "🧠" },
     { name: "Code Assistant", route: "/code-assistant", emoji: "💻" },
     { name: "Speech to Text", route: "/speech-to-text", emoji: "🎤" },
     { name: "Text to Speech", route: "/text-to-speech", emoji: "🔊" },
@@ -17,7 +17,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white flex flex-col">
+    <div className="min-h-screen w-full bg-linear-to-br from-indigo-600 via-purple-600 to-pink-500 text-white flex flex-col">
       {/* Header */}
       <header className="w-full px-6 py-4 flex justify-between items-center bg-white/10 backdrop-blur-md border-b border-white/20 shadow-sm">
         <h1 className="text-2xl font-bold tracking-wide">AI Services Dashboard ⚙️</h1>

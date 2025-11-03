@@ -7,6 +7,7 @@ import Signup from './pages/Signup'
 import Login from './pages/Login'
 import Home from './pages/Home'
 import ChatBot from './components/ChatBot'
+import AITextSummarizer from './components/AITextSummarizer'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/login' element={<Login/>} />
         <Route path='/home' element={<Home />} />
         <Route path='/home/chatbot' element={<ChatBot />} />
+        <Route path='/home/text-summarizer' element={<AITextSummarizer/>} />
         {/* <Route path='/doctors' element={<Doctors />} />
         <Route path='/doctors/:speciality' element={<Doctors />} />
         <Route path='/login' element={<Login />} />
